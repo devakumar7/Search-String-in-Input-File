@@ -1,6 +1,8 @@
 # Search-String-in-Input-File
 
 This Spring Boot application provides a REST API for processing an uploaded text file. The API allows you to check if a provided IP address is available in the list of IP addresses extracted from the uploaded file.
+
+In this particular application, we uploaded "ipv4 1.txt" in the src folder and then processed the text file for splitting the IP Addresses and then searching the input string from the HTTP Post Request in the processed file.
    
 ## Prerequisites
 
