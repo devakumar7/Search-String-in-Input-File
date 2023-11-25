@@ -33,18 +33,29 @@ Endpoint:
    POST /processFile
 
 Request:
+```
+
 {
   "file": "multipart file data",
   "ipAddress": "2.56.16.0"
 }
+```
+
 Upload your text file in the above request with param "file".
 
 Response:
+```
+
 Success: "true, it is available in the provided IP addresses"
+```
+```
+
 Failure: "Error: IP address not found in the provided IP addresses"
+```
+
 
 Example Curl Request
-```bash
+```
 curl -X POST -F "file=@/path/to/your/file.txt" -F "ipAddress=2.56.16.0" http://localhost:8080/checkIpAddress
-
+```
 Replace /path/to/your/file.txt with the path to your text file.
