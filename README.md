@@ -29,8 +29,8 @@ The application will start at http://localhost:8080.
 
 API Endpoints
 Check if an IP address is in the provided list
-Endpoint:
-POST /processFile
+Endpoint:   
+   POST /processFile
 
 Request:
 {
@@ -44,6 +44,7 @@ Success: "true, it is available in the provided IP addresses"
 Failure: "Error: IP address not found in the provided IP addresses"
 
 Example Curl Request
+```bash
 curl -X POST -F "file=@/path/to/your/file.txt" -F "ipAddress=2.56.16.0" http://localhost:8080/checkIpAddress
 
 Replace /path/to/your/file.txt with the path to your text file.
